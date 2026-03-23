@@ -2,7 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Tausta"
+    android:id="@+id/ListInfoActivityButton"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
@@ -11,24 +11,31 @@
         android:id="@+id/SearchActivityButton"
         android:layout_width="147dp"
         android:layout_height="69dp"
+        android:onClick="switchToSearchActivity"
         android:text="Hae kaupungin autojen määrä"
-        tools:layout_editor_absoluteX="132dp"
-        tools:layout_editor_absoluteY="182dp" />
+        app:layout_constraintBottom_toTopOf="@+id/ListInfoActivityButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/Header"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Autohakusovellus"
-        tools:layout_editor_absoluteX="150dp"
-        tools:layout_editor_absoluteY="68dp" />
+        app:layout_constraintBottom_toTopOf="@+id/SearchActivityButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/Tausta"
+        android:id="@+id/ListInfoActivityButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:onClick="switchToListInfoActivity"
         android:text="Listaa tiedot"
-        tools:layout_editor_absoluteX="143dp"
-        tools:layout_editor_absoluteY="273dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
