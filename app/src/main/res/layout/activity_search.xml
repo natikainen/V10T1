@@ -9,11 +9,12 @@
         android:id="@+id/CityNameEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
         android:ems="10"
         android:hint="Kaupungin nimi"
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/YearEdit"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,24 +22,27 @@
         android:id="@+id/YearEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="68dp"
+        android:layout_marginTop="92dp"
         android:ems="10"
         android:hint="2011-2024"
         android:inputType="number"
-        app:layout_constraintBottom_toTopOf="@+id/SearchButton"
-        tools:layout_editor_absoluteX="101dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CityNameEdit" />
 
     <Button
         android:id="@+id/SearchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="28dp"
         android:onClick="onSearchClicked"
         android:text="Hae tiedot"
         app:layout_constraintBottom_toTopOf="@+id/StatusText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/YearEdit" />
 
     <Button
         android:id="@+id/ListInfoActivityButton"
